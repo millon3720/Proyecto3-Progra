@@ -31,21 +31,13 @@
                             <li><a class="dropdown-item" href="FrmEjercicios.aspx">Rutinas Asignadas</a></li>
                       </ul>
                     </li>
-                    <li id="Cajas" class="nav-item dropdown" >
-                        <a  class="nav-link dropdown-toggle" href="#" id="Cajas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cajas
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Realizar Pago</a></li>
-                            <li><a class="dropdown-item" href="#">Generar Factura</a></li>
-                                                     
-                        </ul>
-                    </li>
+                 
+                  
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="Clientes" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clientes
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="FrmClientes.aspx">Clientes</a></li>                            
-                            <li><a class="dropdown-item" href="#">Asignar Rutina</a></li>
+                            <li><a class="dropdown-item" href="FrmClientes.aspx">Clientes</a></li>                                                  
                           
                         </ul>
                     </li>

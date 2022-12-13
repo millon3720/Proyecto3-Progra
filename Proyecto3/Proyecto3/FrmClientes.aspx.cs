@@ -37,6 +37,8 @@ namespace Proyecto3
             datos2.Rows.Add("@Codigo");
             datos2.Rows.Add(int.Parse(datagrid.Rows[e.RowIndex].Cells[2].Text));
             cl.InsertarBorrarActualizarDatos("BorrarCliente", datos2);
+                            LlenarGrid();
+
         }
 
         protected void datagrid_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -113,6 +115,17 @@ namespace Proyecto3
                 datos2.Rows.Add("@CodigoUsuario", "@Correo", "@Calve", "@Acceso");
                 datos2.Rows.Add(ClAtributos.CodigoUsuarioNuevo, TxtCorreo.Text, TxtClave.Text, ChAdmin.Checked);
                 cl.InsertarBorrarActualizarDatos("GuardarCorreos", datos2);
+                LlenarGrid();
+                TxtNombre.Text = "";
+                TxtApellido.Text = "";
+                TxtClave.Text = "";
+                TxtCorreo.Text = "";
+                TxtTelefono.Text = "";
+                ChAdmin.Checked = false;
+                DCanton.DataSource = null;
+                DCanton.DataBind();
+                DDistrito.DataSource = null;
+                DDistrito.DataBind();
             }
             else
             {
