@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Proyecto3.Menu" %>
+
+<!DOCTYPE html>
+   
+<html>
+<head runat="server">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Pagina Maestra</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="Menu"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="FrmLogin.aspx">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Perfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="FrmEjercicios.aspx">Rutinas Asignadas</a></li>
+                      </ul>
+                    </li>
+                    <li id="Cajas" class="nav-item dropdown" >
+                        <a  class="nav-link dropdown-toggle" href="#" id="Cajas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cajas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Realizar Pago</a></li>
+                            <li><a class="dropdown-item" href="#">Generar Factura</a></li>
+                                                     
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Clientes" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clientes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="FrmClientes.aspx">Clientes</a></li>                            
+                            <li><a class="dropdown-item" href="#">Asignar Rutina</a></li>
+                          
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Reportes" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reportes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="FrmReporteFacturas.aspx">Mostrar Facturas</a></li>
+                            <li><a class="dropdown-item" href="FrmReporteProducto.aspx">Mostrar Productos</a></li>
+                            <li><a class="dropdown-item" href="FrmReporteCorreos.aspx">Mostrar Correos</a></li>
+                          
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav></div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <div id="final"></div>
+        </div>
+    </form>
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+ 
