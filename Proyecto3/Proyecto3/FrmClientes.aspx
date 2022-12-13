@@ -11,6 +11,10 @@
 <asp:TextBox ID="TxtApellido" runat="server"></asp:TextBox>
     &nbsp;&nbsp;<asp:Label ID="Label3" runat="server" Text="Telefono"></asp:Label> 
 <asp:TextBox ID="TxtTelefono" runat="server"></asp:TextBox>
+    <asp:Label ID="Label4" runat="server" Text="Correo"></asp:Label> 
+<asp:TextBox ID="TxtCorreo" runat="server"></asp:TextBox>
+    <asp:Label ID="Label5" runat="server" Text="Clave"></asp:Label> 
+<asp:TextBox ID="TxtClave" runat="server"></asp:TextBox>
 <asp:DropDownList ID="DProvincia" runat="server" OnSelectedIndexChanged="DProvincia_SelectedIndexChanged"  AutoPostBack="True">
     <asp:ListItem Selected="True">Seleccione Una Provincia</asp:ListItem>
 </asp:DropDownList>
